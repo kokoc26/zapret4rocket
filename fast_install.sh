@@ -2,7 +2,7 @@
 set -e
 
 #Запрос на установку 3x-ui или аналогов
-read -p "Install tunneling software?: (3xui, marzban, wg, 3proxy or Enter for none): " answer
+read -p "Install tunneling software?: (3xui, marzban, marzban-node, wg, 3proxy or Enter for none): " answer
 # Удаляем лишние символы и пробелы, приводим к верхнему регистру
 clean_answer=$(echo "$answer" | tr -d '[:space:]' | tr '[:lower:]' '[:upper:]')
 if [[ -z "$clean_answer" ]]; then
@@ -24,6 +24,8 @@ elif [[ "$clean_answer" == "3PROXY" ]]; then
     systemctl restart 3proxy
 elif [[ "$clean_answer" == "MARZBAN" ]]; then
     bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/marzban.sh)" @ install
+elif [[ "$clean_answer" == "MARZBAN-NODE" ]]; then
+    bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/marzban-node.sh)" @ install
 else
     echo "Skipping tunneling soft installation."
 fi
