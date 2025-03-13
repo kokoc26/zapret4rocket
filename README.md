@@ -6,7 +6,7 @@
   
 **Установка/обновление** zapret antiDPI под ключ на российских VPS (проверено на rocketcloud.ru) копируем и вставляем в ssh:  
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/IndeecFOX/zapret4rocket/refs/heads/master/fast_install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/kokoc26/zapret4rocket/refs/heads/master/fast_install.sh)
 ```  
 **На все вопросы жмём Enter** (В самом начале скрипт спрашивает установить ли 3x-ui панель или аналоги (жмите Enter, если ничего не нужно или введите соответствущий текст)).   
 По окончании всех прожатий enter всё будет работать.   
