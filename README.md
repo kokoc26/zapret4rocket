@@ -21,7 +21,7 @@ vless://test@45.156.21.250:443?type=tcp&security=reality&pbk=T_PUQPpUcIDBj3bD5Cw
 ```
 Fork Upd 07.02.25: добавлен простенький скрипт **для установки на OpenWRT**
 ```
-opkg update && opkg install bash curl && bash <(curl -Ls https://raw.githubusercontent.com/IndeecFOX/zapret4rocket/refs/heads/master/fast_install_for_OWRT.sh)
+opkg update && opkg install bash curl && bash <(curl -Ls https://raw.githubusercontent.com/kokoc26/zapret4rocket/refs/heads/master/fast_install_for_OWRT.sh)
 ``` 
 Upd 06.03.25: v70 upd to v70.3
 
